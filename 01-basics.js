@@ -23,22 +23,38 @@
 //     // Change code above this line
 // 
 // slugify("English for developer"
-function findLongestWord(string) {
-    let word = string.split(' ');
-    let longWord = word[0];
-    for (let i = 0; i < word.length; i += 1) {
+// function filterArray(numbers, value) {
+
+//     let newArray = [];
+//     for (let number of numbers) {
+//         if (number > value) {
+//             newArray.push(number);
+//         }
+//     }
 
 
-        if (word[i].length > longWord.length) {
-            longWord = word[i];
-        }
-
-    }
-    return longWord;
-    // Change code below this line
+//     // Change code below this line
 
 
+//     return newArray;
+//     // Change code above this line
+// }
 
-    // Change code above this line
+// filterArray([12, 24, 8, 41, 76], 20)
+
+const goods = {
+    apples: 6,
+    grapes: 3,
+    bread: 4,
+    cheese: 7,
+};
+
+const values = Object.values(goods); // [6, 3, 4, 7]
+
+let total = 0;
+
+for (const value of values) {
+    total += value;
 }
-findLongestWord("The quick brown fox jumped over the lazy dog")
+
+console.log(total); // 20
